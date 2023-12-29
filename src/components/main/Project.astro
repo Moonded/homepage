@@ -1,0 +1,41 @@
+---
+const { Title, URL, Description } = Astro.props;
+---
+
+<div
+  class="rounded-lg bg-white hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 p-[1px] w-max max-w-80"
+>
+  <div
+    class="bg-neutral-950 rounded-lg w-fit px-2 py-1 hover:bg-neutral-900 h-full"
+  >
+    <a
+      href={URL}
+      class="grid grid-rows-[2rem,auto,2rem] text-neutral-100 hover:text-white transition-colors duration-200 h-full"
+    >
+      <h3 class="text-lg font-semibold">{Title}</h3>
+      <p class="text-sm text-neutral-300 text-clip flex items-center">
+        {Description}
+      </p>
+      <div class="flex items-center">
+        <span class="text-sm text-neutral-300">{URL}</span>
+        <svg
+          class="w-4 h-4 text-neutral-300 ml-1"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+        >
+          <path
+            d="M5 12H19"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M12 5l7 7-7 7"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </div>
+    </a>
+  </div>
+</div>

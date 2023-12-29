@@ -1,0 +1,56 @@
+<div>
+  <div id="Work" class="space-x-2">
+    <img src="/org.svg" alt="Workplace" width="15" class="inline invert" /><a
+      class="inline hover:underline font-bold text-sm"
+      href="https://www.bundeswehr.de/">@Bundeswehr</a
+    >
+  </div>
+  <div id="Place" class="space-x-2">
+    <img src="/place.svg" alt="Country" width="15" class="inline invert" /><p
+      class="inline text-sm"
+    >
+      Germany
+    </p>
+  </div>
+  <div id="Time" class="space-x-2">
+    <img src="/time.svg" alt="Time" width="15" class="inline invert" /><p
+      id="active_time"
+      class="inline text-sm"
+    >
+      00:00
+    </p><span class="text-neutral-500 text-sm">(UTC +01:00)</span>
+  </div>
+  <div id="Youtube" class="space-x-2">
+    <img src="/youtube.svg" alt="Youtube" width="15" class="inline invert" /><a
+      class="inline hover:underline text-sm"
+      href="https://www.youtube.com/channel/UCaYxxDvrVHQ9chwS3iQZM7w"
+      >OfficialMoonded</a
+    >
+  </div>
+  <div id="Twitch" class="space-x-2">
+    <img src="/twitch.svg" alt="Twitch" width="15" class="inline invert" /><a
+      class="inline hover:underline text-sm"
+      href="https://www.twitch.tv/moonded">moonded</a
+    >
+  </div>
+  <div id="Twitter" class="space-x-2">
+    <img src="/twitter.svg" alt="Twitter" width="15" class="inline invert" /><a
+      class="inline hover:underline text-sm"
+      href="https://twitter.com/MoondedOriginal">MoondedOriginal</a
+    >
+  </div>
+</div>
+
+<script>
+  let date = new Date();
+  let options = {
+    timeZone: "Europe/Berlin",
+    hour: "2-digit",
+    minute: "2-digit",
+  };
+  let Time = date.toLocaleString(
+    "en-US",
+    options as Intl.DateTimeFormatOptions
+  );
+  document.getElementById("active_time")!.innerHTML = Time;
+</script>

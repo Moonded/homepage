@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Description from "../components/main/Description.astro";
+import Image from "../components/sidebar/Image.astro";
+import Info from "../components/sidebar/Info.astro";
+import Stats from "../components/sidebar/Stats.astro";
+import Orgs from "../components/main/Orgs.astro";
+import Project from "../components/main/Project.astro";
+---
+
+<Layout Title="Home">
+  <div class="flex justify-center mx-10 xl:mx-40 2xl:mx-60 my-20 md:my-36">
+    <div class="grid grid-cols-1 space-y-4 xl:grid-cols-[19rem,auto] w-full">
+      <div class="p-2 space-y-2">
+        <Image />
+        <Info />
+        <Stats />
+      </div>
+      <div class="space-y-5">
+        <Description />
+        <div class="space-y-2">
+          <h1>Associated Organisations and Teams</h1>
+          <div class="flex space-x-2">
+            <div
+              class="grid auto-cols-max grid-cols-2 sm:grid-cols-3 md:grid-cols-[auto,auto,auto,auto] lg:grid-cols-[auto,auto,auto,auto,auto] h-full gap-2 w-fit"
+            >
+              <Orgs
+                ImageUri="https://avatars.githubusercontent.com/u/73969561"
+                Text="RED Modding Tools"
+                TextLink="https://github.com/WolvenKit"
+              />
+              <Orgs
+                ImageUri="https://avatars.githubusercontent.com/u/128258847"
+                Text="NOVA Intergalactic"
+                TextLink="https://github.com/NOVA-Intergalactic"
+              />
+              <Orgs
+                ImageUri="https://avatars.githubusercontent.com/u/101471333"
+                Text="CDPR-Mod-Docs"
+                TextLink="https://github.com/CDPR-Modding-Documentation"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <h1>Projects</h1>
+          <div class="flex w-full">
+            <div
+              class="grid auto-cols-max grid-cols-[auto] md:grid-cols-2 lg:grid-cols-[auto,auto,auto] h-full gap-2 w-max"
+            >
+              <Project
+                URL="https://github.com/NOVA-Intergalactic"
+                Title="N.A.O.M.I"
+                Description="Discord Bot for the NOVA Intergalactic. Private project."
+              />
+              <Project
+                URL="https://wiki.redmodding.org/"
+                Title="Redmodding Wiki"
+                Description="Wiki project for the RED modding tools."
+              />
+              <Project
+                URL="https://redmodding.org/"
+                Title="Redmodding Website"
+                Description="Website Project for RED Modding Tools."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
