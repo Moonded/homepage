@@ -9,8 +9,10 @@ import Project from "../components/main/Project.astro";
 ---
 
 <Layout Title="Home">
-  <div class="flex justify-center mx-10 xl:mx-40 2xl:mx-60 my-20 md:my-36">
-    <div class="grid grid-cols-1 space-y-4 xl:grid-cols-[19rem,auto] w-full">
+  <div class="mx-10 xl:mx-40 2xl:mx-60 my-20 md:my-36">
+    <div
+      class="grid space-y-4 grid-cols-1 md:grid-cols-[19rem,auto] 2xl:grid-cols-[19rem,80rem] w-full space-x-3"
+    >
       <div class="p-2 space-y-2">
         <Image />
         <Info />
@@ -18,7 +20,7 @@ import Project from "../components/main/Project.astro";
       </div>
       <div class="space-y-5">
         <Description />
-        <div class="space-y-2">
+        <div class="space-y-3">
           <h1>Associated Organisations and Teams</h1>
           <div class="flex space-x-2">
             <div
@@ -30,11 +32,6 @@ import Project from "../components/main/Project.astro";
                 TextLink="https://github.com/WolvenKit"
               />
               <Orgs
-                ImageUri="https://avatars.githubusercontent.com/u/128258847"
-                Text="NOVA Intergalactic"
-                TextLink="https://github.com/NOVA-Intergalactic"
-              />
-              <Orgs
                 ImageUri="https://avatars.githubusercontent.com/u/101471333"
                 Text="CDPR-Mod-Docs"
                 TextLink="https://github.com/CDPR-Modding-Documentation"
@@ -42,13 +39,14 @@ import Project from "../components/main/Project.astro";
             </div>
           </div>
         </div>
-        <div class="space-y-2">
+        <div class="space-y-3">
           <h1>Projects</h1>
           <div class="flex w-full">
             <div
-              class="grid auto-cols-max grid-cols-[auto] md:grid-cols-2 lg:grid-cols-[auto,auto,auto] h-full gap-2 w-max"
+              class="grid auto-cols-max grid-cols-[auto] md:grid-cols-2 lg:grid-cols-[auto,auto,auto,auto] h-full gap-3 w-max"
             >
               <Project
+                Discontinued="true"
                 URL="https://github.com/NOVA-Intergalactic"
                 Title="N.A.O.M.I"
                 Description="Discord Bot for the NOVA Intergalactic. Private project."
@@ -62,6 +60,11 @@ import Project from "../components/main/Project.astro";
                 URL="https://redmodding.org/"
                 Title="Redmodding Website"
                 Description="Website Project for RED Modding Tools."
+              />
+              <Project
+                URL="https://github.com/Moonded/lizzyfuzzy"
+                Title="LizzyFuzzy Discord Bot"
+                Description="Discord Bot for Red Modding Tools."
               />
             </div>
           </div>

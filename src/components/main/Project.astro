@@ -1,5 +1,5 @@
 ---
-const { Title, URL, Description } = Astro.props;
+const { Title, URL, Description, Discontinued } = Astro.props;
 ---
 
 <div
@@ -12,7 +12,10 @@ const { Title, URL, Description } = Astro.props;
       href={URL}
       class="grid grid-rows-[2rem,auto,2rem] text-neutral-100 hover:text-white transition-colors duration-200 h-full"
     >
-      <h3 class="text-lg font-semibold">{Title}</h3>
+      <h3 class="text-lg font-semibold">
+        {Title}
+        {Discontinued ? "- Discontinued" : ""}
+      </h3>
       <p class="text-sm text-neutral-300 text-clip flex items-center">
         {Description}
       </p>
