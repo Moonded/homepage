@@ -1,3 +1,7 @@
+---
+const { text } = Astro.props;
+---
+
 <div
   class="rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[1px]"
 >
@@ -10,15 +14,7 @@
       </p>
       <h1 class="text-2xl font-bold">Hi, I'm Sebastian! 👋</h1>
       <hr style="margin-top: .5rem !important" class="border-neutral-500" />
-      <p class="text-sm">
-        I'm a 23 year old part time software developer from germany. Mainly I am
-        working in the German Military as a IT Specialist.<br />My hobbies
-        include coding on my projects, playing video games and reading books.<br
-        /><br />I am currently working on a few projects, which you can find on
-        my GitHub page. This page here is also one of my projects, which I am in
-        the process of rewriting. If you want to know more about be, feel free
-        to get in touch with me on one of my social media accounts.
-      </p>
+      <p class="text-sm">{text}</p>
     </div>
   </div>
 </div>

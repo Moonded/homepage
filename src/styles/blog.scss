@@ -1,0 +1,47 @@
+body {
+  h2 {
+    font-size: 20pt;
+    margin-left: -2.2ch;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    &::before {
+      content: "# ";
+      color: rgb(49 46 129);
+    }
+  }
+
+  h3 {
+    font-size: 12pt;
+    margin-left: -3ch;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    &::before {
+      content: "## ";
+      color: rgb(49 46 129);
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: #9d174d;
+    }
+  }
+
+  @media (max-width: 850px) {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    li {
+      &::before {
+        content: "• ";
+        color: rgb(49 46 129);
+      }
+    }
+  }
+}

@@ -42,7 +42,7 @@
   <div id="Blog" class="space-x-2">
     <img src="/blog.svg" alt="Blog" width="15" class="inline invert white" /><a
       class="inline hover:underline text-sm"
-      href="https://blog.moonded.com">My Blog</a
+      href="/blog">My Blog</a
     >
   </div>
 </div>
@@ -56,7 +56,7 @@
   };
   let Time = date.toLocaleString(
     "en-US",
-    options as Intl.DateTimeFormatOptions
+    options as Intl.DateTimeFormatOptions,
   );
   document.getElementById("active_time")!.innerHTML = Time;
 </script>
