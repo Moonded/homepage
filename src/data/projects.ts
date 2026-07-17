@@ -1,9 +1,9 @@
 export const projects = [
     {
-        "Discontinued": true,
-        "URL":"https://github.com/NOVA-Intergalactic",
-        "Title":"N.A.O.M.I",
-        "Description":"Discord Bot for the NOVA Intergalactic. Private project.",
+        "Discontinued": false,
+        "URL":"https://github.com/Moonded/homepage",
+        "Title":"Homepage",
+        "Description":"My homepage. Litteraly this website.",
     },
     {
         "Discontinued": false,
@@ -24,9 +24,15 @@ export const projects = [
         "Description":"Discord Bot for Red Modding Tools.",
     },
     {
-        "Discontinued": false,
+        "Discontinued": true,
         "URL":"https://github.com/Moonded/lizzyapi",
         "Title":"Backend API",
         "Description":"API Backend for the RED Modding Tools Website and LizzyFuzzy Discord Bot",
-    }
+    },
+    {
+        "Discontinued": true,
+        "URL":"https://github.com/NOVA-Intergalactic",
+        "Title":"N.A.O.M.I",
+        "Description":"Discord Bot for the NOVA Intergalactic. Private project.",
+    },
 ]
